@@ -1,0 +1,12 @@
+### Call HOME route
+GET http://localhost:5000/
+
+### Call user signup route
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "firstname": "Edward",
+  "lastname": "T",
+  "age": 19
+}
