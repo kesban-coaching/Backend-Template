@@ -3,6 +3,7 @@ import './config.js'
 import './database-connect.js' // import a script that does something, but does not export anything
 import { User } from './models/User.js';
 import express from 'express'
+import cors from 'cors'
 
 // create an API where we can put ROUTES on 
 // that the frontend can call
@@ -10,6 +11,7 @@ const app = express()
 
 // register JSON parser
 // parse incoming JSON data and store it in req.body variable
+app.use(cors())
 app.use(express.json()) // => req.body
 
 // HOME ROUTE
